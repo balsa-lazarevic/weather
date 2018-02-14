@@ -4,6 +4,8 @@ class GoogleMap extends Component {
   componentDidMount() {
     new google.maps.Map(this.refs.map, {
       zoom: 12,
+      mapTypeControl: false,
+      streetViewControl : false,
       center: {
         lat: this.props.lat,
         lng: this.props.lon
